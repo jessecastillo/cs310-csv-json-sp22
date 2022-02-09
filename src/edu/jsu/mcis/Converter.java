@@ -70,7 +70,14 @@ public class Converter {
             List<String[]> full = reader.readAll();
             Iterator<String[]> iterator = full.iterator();
             
-            // INSERT YOUR CODE HERE
+            int arr[][]={{1,2,3,4,5},{2,4,5,6,7},{4,4,5,5,6}};  
+              
+            for(int i=0;i<5;i++){
+                for(int j=0;j<5;j++){  
+                    System.out.print(arr[i][j]+" ");
+                }  
+                System.out.println();  
+            }    
             
         }        
         catch(Exception e) { e.printStackTrace(); }
@@ -88,7 +95,16 @@ public class Converter {
             StringWriter writer = new StringWriter();
             CSVWriter csvWriter = new CSVWriter(writer, ',', '"', '\\', "\n");
             
-            // INSERT YOUR CODE HERE
+            int arr[][]={{1,2,3},{2,4,5},{4,4,5}};  
+              
+            for(int i=0;i<3;i++){
+                for(int j=0;j<3;j++){  
+                    System.out.print(arr[i][j]+" ");
+                }  
+                System.out.println();  
+            }    
+            
+        
             
         }
         
